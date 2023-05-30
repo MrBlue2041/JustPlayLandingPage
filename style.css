@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary: #ff79c6;
+    --secondary: #bd93f9;
+    --accent: #ffb86c;
+    --base-content: #f8f8f2;
+    --info: #8be9fd;
+    --success: #50fa7b;
+    --warning: #f1fa8c;
+    --error: #ff5555;
+    --neutral: #1c1c21;
+    --base-100: #0b0b0d;
+    --base-200: #080809;
+    --base-300: #050506;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--base-100);
+    color: var(--base-content);
+    margin: 0;
+}
+
+/*header nav*/
+
+.container-head{
+    display: flex;
+    align-items: center;
+    margin: 0 90px 0 90px;
+}
+
+.box-titlename {
+    display: flex;
+    align-items: center;
+}
+
+.box-menu {
+    flex-grow: 10;
+    margin-left: 140px;
+}
+
+.box-menu ul {
+    padding: 10px;
+}
+
+.box-menu ul, .box-menu li, .contacts li{
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--base-content);
+    justify-content: start;
+} 
+
+.botao {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #282831;
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+}
+
+.box-menu li a {
+    border-bottom: var(--base-100) 2px solid;
+    padding-bottom: 10px;
+}
+
+li a:hover{
+    border-bottom: var(--primary) 2px solid;
+}
+
+.destaque {
+    background-color: var(--primary);
+}
+/*sections*/
+.box-main {
+    margin-top: 90px;
+    text-align: center;
+    align-items: center;
+}
+
+.box-main h1 {
+    font-size: 40px;
+}
+
+form {
+    border: 2px solid white;
+    display: inline-block;
+    padding: 1px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form > input {
+    border: none;
+}
+
+input:focus {
+    outline: 0;
+}
+  
+form > button {
+    background-color: var(--primary);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.certifications {
+    display: inline-block;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    
+}
+
+.certifications ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.certifications li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.about-aplication {
+    display: grid;
+    margin-top: 150px;
+    background-color: white;  
+    max-width: auto;
+    grid-template-columns: auto auto;
+    color: black;
+    margin-bottom: 100px;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 70px 0 70px 0;
+}
+
+.about-img {
+    padding: 10px 10px 6px 10px;
+}
+
+.about-text h2 {
+    color: var(--primary);
+    border-bottom: #ff79c6 2px solid;
+}
+
+.about-text p {
+    color: black;
+}
+
+.faq-one {
+    display: inline-block;
+    width: 80%;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75px;
+    text-align: left;
+    align-items: center;
+    background-color: #282831;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    margin-top: 15px;
+}
+
+.response {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    max-height: auto;
+    text-align: left;
+    align-items: center;
+    background-color: #282831;
+    font-size: 20px;
+    padding: 20px;
+    display: none;
+}
+
+.displayactive {
+    display: block;
+}
+
+.box-faqs h2 {
+    font-size: 45px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-height: auto;
+    margin-top: 100px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.contacts li {
+    margin-bottom: 5px;
+}
+
+.prices {
+    color: black;
+    display: grid;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 150px;
+}
+
+.box-prices {
+    border: var(--primary) 2px solid;
+    padding: 50px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.box-prices strong {
+    font-size: 35px;
+    color: var(--primary);
+}
+
+.box-prices ul {
+    text-align: center;
+    padding: 0;
+    margin: 30px 0 30px 0;
+}
+
+.box-prices ul li {
+    text-align: center;
+    display: flex;
+}
+
+.box-prices ul li p {
+    color: black;
+}
+
+.borders {
+    border-bottom: var(--primary) 2px solid;
+}
+
+.rose {
+    background-color: var(--primary);
+}
+
+.recomended {
+    background-color: var(--primary);
+    border-radius: 8px;
+    text-align: center;
+    padding: 1px;
+    color: white;
+}
+
+/*responsividade*/
+@media screen and (max-width: 480px) {
+    .box-authentication {
+        display: none;
+    }
+
+    .container-head{
+        display: flex;
+        align-items: center;
+        margin: 0 20px 0 20px;
+    }
+
+    .certifications {
+        margin: 0;
+        align-items: center;
+    }
+
+    .certifications li {
+        margin-left: 0;
+    }
+    
+    .prices {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-top: 100px;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-text {
+        padding: 20px;
+        margin: 40px 0 40px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box-main {
+        margin-top: 20px;
+    }
+
+    .box-menu {
+        flex-grow: 0;
+        margin: 0;
+    }
+
+    .box-menu ul, .box-menu li{
+        display: flex;
+        list-style: none;
+        margin-left: 5px;
+        margin-top: 15px;
+        padding: 5px;
+    }
+
+    .box-faqs {
+        margin-bottom: 50px;
+    }
+
+    .contacts {
+        display: none;
+    }
+  }
+
+  @media all and  (max-width:1024px),(max-height: 768px) {
+    .container-head{
+        display: flex;
+        align-items: center;
+        margin: 0 20px 0 20px;
+    }
+
+    .box-menu {
+        margin-left: 20px;
+    }
+
+    .about-img {
+        display: none;
+    }
+    }
